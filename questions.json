@@ -237,7 +237,7 @@
   {
     "question": "If a grammar has different LMD or RMD, then it is..........",
     "options": ["ambiguous grammar, un ambiguous grammar", "un ambiguous grammar, ambiguous grammar", "ambiguous grammar, ambiguous grammar", "ambiguous grammar"],
-    "correct": 2
+    "correct": 3
   },
   {
     "question": "Every language defined by a FA is a .......... language",
