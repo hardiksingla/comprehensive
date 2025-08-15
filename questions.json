@@ -1727,7 +1727,7 @@
   {
     "question": "What is the value of the postfix expression 6 3 2 4 + - *",
     "options": ["Something between -15 and -100", "Something between -5 and -15", "Something between 5 and -5", "Something between 5 and 15"],
-    "correct": 1
+    "correct": 0
   },
   {
     "question": "What is the status of array after the first iteration of selection sort for the given array of elements: 5,7,10,12,2,8",
@@ -1887,17 +1887,17 @@
   {
     "question": "Total Development in programmer months of Utility programs",
     "options": ["TDEV=2.5xPM pow 0.38", "TDEV=2.5xPM pow 0.35", "TDEV=2.5xPM pow 0.32", "None of the above"],
-    "correct": 0
+    "correct": 2
   },
   {
     "question": "Total Development in programmer months of Systems programs",
     "options": ["TDEV=2.5xPM pow 0.38", "TDEV=2.5xPM pow 0.35", "TDEV=2.5xPM pow 0.32", "None of the above"],
-    "correct": 1
+    "correct": 0
   },
   {
     "question": "Total bits for a direct-mapped cache with data of 16 KB and blocks of 4-word, assuming a 32-bit address are",
     "options": ["143K", "144K", "145K", "147K"],
-    "correct": 1
+    "correct": 3
   },
   {
     "question": "To read and write from a file we are using the standard C++ library called",
