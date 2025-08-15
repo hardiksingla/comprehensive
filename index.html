@@ -427,7 +427,7 @@
 
             displayRandomQuestion() {
                 if (this.questions.length === 0) {
-                    this.showError('No questions available in the selected range.');
+                    this.showCompletionMessage();
                     return;
                 }
 
@@ -438,12 +438,13 @@
                 // Get random question
                 const randomIndex = Math.floor(Math.random() * this.questions.length);
                 this.currentQuestion = this.questions[randomIndex];
+                this.currentQuestionIndex = randomIndex; // Store index for removal
 
                 // Build HTML
                 const quizContent = document.getElementById('quiz-content');
                 quizContent.innerHTML = `
                     <div class="question-info" style="text-align: center; margin-bottom: 20px; color: #666; font-size: 0.9rem;">
-                        Question Range: ${this.fromIndex} - ${this.toIndex} | Total in Range: ${this.questions.length}
+                        Question Range: ${this.fromIndex} - ${this.toIndex} | Remaining: ${this.questions.length}
                     </div>
                     <div class="question">${this.currentQuestion.question}</div>
                     <div class="options">
@@ -498,6 +499,9 @@
                     feedback.textContent = '🎉 Correct! Well done!';
                     feedback.className = 'feedback correct';
                     this.score++;
+                    
+                    // Remove the correctly answered question from the pool
+                    this.questions.splice(this.currentQuestionIndex, 1);
                 } else {
                     options[this.selectedOption].classList.add('incorrect');
                     feedback.textContent = `❌ Incorrect. The correct answer was: ${this.currentQuestion.options[this.currentQuestion.correct]}`;
@@ -522,6 +526,54 @@
                 document.getElementById('total').textContent = this.totalAnswered;
             }
 
+            showCompletionMessage() {
+                const quizContent = document.getElementById('quiz-content');
+                const percentage = this.totalAnswered > 0 ? Math.round((this.score / this.totalAnswered) * 100) : 0;
+                
+                let message = '';
+                let emoji = '';
+                
+                if (percentage >= 90) {
+                    message = 'Outstanding! You\'ve mastered this section!';
+                    emoji = '🏆';
+                } else if (percentage >= 80) {
+                    message = 'Excellent work! You\'re doing great!';
+                    emoji = '🌟';
+                } else if (percentage >= 70) {
+                    message = 'Good job! Keep practicing to improve!';
+                    emoji = '👍';
+                } else if (percentage >= 60) {
+                    message = 'Not bad! Review the topics and try again!';
+                    emoji = '📚';
+                } else {
+                    message = 'Keep studying! Practice makes perfect!';
+                    emoji = '💪';
+                }
+
+                quizContent.innerHTML = `
+                    <div style="text-align: center; padding: 40px 20px;">
+                        <div style="font-size: 4rem; margin-bottom: 20px;">${emoji}</div>
+                        <h2 style="color: #333; margin-bottom: 20px;">Quiz Completed!</h2>
+                        <div style="font-size: 1.2rem; margin-bottom: 15px;">
+                            You answered all correctly answered questions in this range!
+                        </div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #667eea; margin-bottom: 15px;">
+                            Final Score: ${this.score}/${this.totalAnswered} (${percentage}%)
+                        </div>
+                        <div style="color: #666; margin-bottom: 30px; line-height: 1.6;">
+                            ${message}
+                        </div>
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <button class="start-btn" onclick="quiz.showRangeSelector()">
+                                Select New Range
+                            </button>
+                            <button class="start-btn" onclick="location.reload()" style="background: linear-gradient(45deg, #28a745, #20c997);">
+                                Restart All Questions
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
             showError(message) {
                 document.getElementById('quiz-content').innerHTML = `
                     <div class="error">${message}</div>
