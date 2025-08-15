@@ -1292,7 +1292,7 @@
   {
     "question": "Which of the below is not a business continuity disaster?",
     "options": ["Flooding", "Covid19", "Earth Quake", "Tsunami"],
-    "correct": 3
+    "correct": 1
   },
   {
     "question": "Which of the below is an inline device?",
