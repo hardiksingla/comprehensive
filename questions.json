@@ -5460,7 +5460,7 @@
   {
     "question": "What is the minimum hamming distance of this coding scheme d (01101,10011)?",
     "options": ["1", "2", "3", "4"],
-    "correct": 2
+    "correct": 3
   },
   {
     "question": "What is the efficiency of the Go back N ARQ protocol?",
@@ -5475,7 +5475,7 @@
   {
     "question": "The hamming distance between the words 101101101 and 110110010 is",
     "options": ["4", "5", "6", "7"],
-    "correct": 2
+    "correct": 3
   },
   {
     "question": "The _______ method provides a one-time session key for two parties.",
