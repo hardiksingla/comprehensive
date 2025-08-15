@@ -2267,7 +2267,7 @@
   {
     "question": "The maximum distance between two nodes present in the queue is 1 in the implementation of BFS. (length/edge=1)",
     "options": ["True", "False"],
-    "correct": 1
+    "correct": 0
   },
   {
     "question": "The matrix structure is the correct structure when three conditions are met. Which of the following is one of these three conditions?",
@@ -6010,7 +6010,7 @@
   {
     "question": "Which is false about FTP?",
     "options": ["Transfer files and folders back and forth", "Builds and maintains a website", "Securely transferring files", "uploads or downloads files"],
-    "correct": 2
+    "correct": 1
   },
   {
     "question": "These are the idempotent method in the stateless protocol",
