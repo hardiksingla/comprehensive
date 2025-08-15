@@ -1152,7 +1152,7 @@
   {
     "question": "Which of the following keys in a table can uniquely identify a row in a table?",
     "options": ["Candidate key", "Alternate key", "Primary key", "All of these"],
-    "correct": 2
+    "correct": 3
   },
   {
     "question": "Which of the following is/are White box technique ?",
@@ -1297,7 +1297,7 @@
   {
     "question": "Which of the below is an inline device?",
     "options": ["Switch", "Router", "VPN", "Host"],
-    "correct": 3
+    "correct": 0
   },
   {
     "question": "Which of the below is a network sniffer tool?",
