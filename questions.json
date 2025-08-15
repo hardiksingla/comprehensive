@@ -677,7 +677,7 @@
   {
     "question": "Let L1’ be a recursive language and let L2’ be a recursively enumerable language which is not recursive. Which one of the following is TRUE?",
     "options": ["L1 is recursive, L2 is recursively enumerable", "L1 is recursively enumerable and L2 is recursive", "L1 is recursive, L2 is not recursively enumerable", "L1 and L2 are recursively enumerable"],
-    "correct": 0
+    "correct": 2
   },
   {
     "question": "The complement of the universal language Lu’ is",
@@ -687,17 +687,17 @@
   {
     "question": "The complement of the diagonal language L’ is",
     "options": ["Recursively enumerable", "Not recursively enumerable", "Recursively enumerable but not recursive", "Recursive"],
-    "correct": 0
+    "correct": 2
   },
   {
     "question": "The following grammar G=(N, T, P, S), where N=(S, A, B, C, D, E), T ={a,b,c} P= {S→ABCD, BCD → DE, D→aD, D→a, E→bE} is of",
     "options": ["Type 3", "Type 2 but not of type 3", "Type 1 but not of type 2", "Type 0 but not of type 1"],
-    "correct": 2
+    "correct": 3
   },
   {
     "question": "Let L and L’ be a language and its complement. Which one of the following possibilities will not hold?",
     "options": ["L and L' are recursive", "L is recursively enumerable but not recursive L' is not recursively enumerable.", "L and L' are not recursively enumerable", "L and L' are not recursively enumerable but not recursive."],
-    "correct": 2
+    "correct": 3
   },
   {
     "question": "The encoding of the Turing machine with transitions δ(q1,0) = (q2, 1, R) δ(q2,0) = (q3,0, R) δ(q3,B) = (q2,1,L) is hold?",
