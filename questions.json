@@ -1167,7 +1167,7 @@
   {
     "question": "Which of the following is TRUE?",
     "options": ["Every finite subset of a non-regular set is regular", "Every subset of a regular set is regular", "Infinite union of finite sets is regular", "The union of two non-regular sets is not regular"],
-    "correct": 1
+    "correct": 0
   },
   {
     "question": "Which of the following is true",
@@ -1412,7 +1412,7 @@
   {
     "question": "Which is used for predicting virus?",
     "options": ["Firewall", "CWE", "IPS", "Exposures"],
-    "correct": 0
+    "correct": 2
   },
   {
     "question": "Which is the most optimal scheduling algorithm?",
