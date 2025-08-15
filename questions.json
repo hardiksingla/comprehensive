@@ -1442,7 +1442,7 @@
   {
     "question": "Which is first loaded into the BUS by the data transfer initiator?",
     "options": ["Data", "Address", "Control Information", "Address, Control Information"],
-    "correct": 1
+    "correct": 3
   },
   {
     "question": "Which is a true statement.",
