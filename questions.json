@@ -1082,7 +1082,7 @@
   {
     "question": "Which of the following statement(s) is/are correct? S1: When Bjarne stroustrup designed C++, there is no such concept of exception handling. S2: Exception handling is a new feature added to ANSI C++; not available in earlier compilers.",
     "options": ["Only S1", "Only S2", "Neither S1 nor S2", "Both S1 and S2"],
-    "correct": 1
+    "correct": 3
   },
   {
     "question": "Which of the following statement is true?",
@@ -2727,7 +2727,7 @@
   {
     "question": "Guess the output",
     "options": ["200", "100", "a. Address of variable a", "a. Address of variable b"],
-    "correct": 1
+    "correct": 3
   },
   {
     "question": "Guess the output of the following",
@@ -5350,7 +5350,7 @@
   {
     "question": "_______ are used for cellular phone, satellite, and wireless LAN communications.",
     "options": ["Radio waves", "Infrared waves", "Microwaves", "None of the above"],
-    "correct": 0
+    "correct": 2
   },
   {
     "question": "_______ affect schedule or resources",
